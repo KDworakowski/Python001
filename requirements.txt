@@ -1,3 +1,4 @@
+#w pliku requirements wpisujemy funkcje ktore sa uzywane w projekcie zeby kazdy mogl je latwo pobrac
 pylint
 pytest
 pytest-repeat
