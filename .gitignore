@@ -1,3 +1,4 @@
 #w pliku .gitignore wypisujemy nazwy katalogow badz plikow, ktorych nie chcemy wrzucac do naszego repozytorium
 __pycache__
 .pytest_cache
+venv

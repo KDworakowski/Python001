@@ -1,0 +1,9 @@
+version: "3.9"
+   
+services:
+  web:
+    image: kacpi/test001:latest
+    build: .
+    command: run --host=0.0.0.0
+    ports:
+      - "0.0.0.0:80:5000"
