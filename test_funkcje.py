@@ -26,4 +26,3 @@ def test_ilosc_zwracanych_liczb_szybko(min, max, count, expected): #tworzy defin
 def test_czy_sie_powtarza_szybko(): #tworzy definicje test czy powtarza sie szybko
     test = funkcje.szybkie_losowanie() #tworzy zmienna test ktora wlacza funkcje szybkiego losowania
     assert len(test) == len(set(test)) #funkcja sprawdza czy ilosc znakow ktore da nam zmienna test rowna sie ilosci unilalnych znakow w zmiennej test
-
