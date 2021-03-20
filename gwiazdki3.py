@@ -1,7 +1,14 @@
 #! /usr/bin/env python
 # napisz funkcje ktora bedzie przyjmowala dwa parametry wysokosc oraz szerokosc choinki z uwzglednieniem pienka ktory zawsze bedzie wynosil dwa
-
+szerokosc = 5
+wysokosc = 8
 def choinka(szerokosc, wysokosc):
+    if (szerokosc <= 4):
+        print("Minimalna szerokosc to 5.")
+        exit()
+    if (wysokosc <= 7):
+        print("Minimalna wysokosc to 8.")
+        exit()
     for obliczana_wysokosc in range(0, wysokosc):
         for obliczana_szerokosc in range(0, szerokosc):
             if ( \
@@ -66,7 +73,7 @@ def choinka(szerokosc, wysokosc):
                 print("*", end = " ")
         print("\n", end = "")
 
-choinka(6,8)
+choinka(szerokosc, wysokosc)
 
 #-----------
 # nieparzyste += 0
