@@ -16,6 +16,25 @@ def choinka(szerokosc, wysokosc):
                 ) \
             ):
                 print("@", end = " ")
+
+                
+            # elif (obliczana_wysokosc >= wysokosc - wysokosc ):
+            #     if ( \
+            #         (szerokosc % 2 == 0 and (obliczana_szerokosc == szerokosc / 2 or obliczana_szerokosc + 1 == szerokosc / 2)) or \
+            #         (szerokosc % 2) == 1 and (obliczana_szerokosc == (szerokosc - 1) / 2) \
+            #     ):
+            #         print ("*", end = " ")
+            #     else:
+            #         print(" ", end = " ")
+
+            elif (obliczana_wysokosc <= wysokosc - 6):
+                if ( \
+                    (szerokosc % 2 == 0 and (obliczana_szerokosc == szerokosc / 2 or obliczana_szerokosc + 1 == szerokosc / 2)) or \
+                    (szerokosc % 2) == 1 and (obliczana_szerokosc == (szerokosc - 1) / 2) \
+                ):
+                    print("*", end = " ")
+                else:
+                    print(" ", end = " ")
             elif ( \
                 (obliczana_wysokosc == 0 and ( \
                     (szerokosc % 2 == 0 and ( \
@@ -26,17 +45,15 @@ def choinka(szerokosc, wysokosc):
                 )) or (\
                 obliczana_wysokosc <= wysokosc - 4 and (obliczana_szerokosc == 0 or obliczana_szerokosc == szerokosc - 1)) \
                 or (\
-                obliczana_wysokosc <= wysokosc - 6 and (obliczana_szerokosc == 1 or obliczana_szerokosc == szerokosc - 2)) \
+                obliczana_wysokosc <= wysokosc - 6 and (obliczana_szerokosc == 1 or obliczana_szerokosc <= szerokosc - 2)) \
                 # or (\
                 # obliczana_wysokosc <= wysokosc - 6 and (obliczana_szerokosc == 2 or obliczana_szerokosc == szerokosc - 3)) \
                 # or (\
                 # obliczana_wysokosc <= wysokosc - 6 and (obliczana_szerokosc == 3 or obliczana_szerokosc == szerokosc - 4)) \
             ):
-            # elif ( \
-            #     (szerokosc % 2 == 0 and ( \
-            #         obliczana_wysokosc <= szerokosc / szerokosc))
-            #     ):
                 print(" ", end = " ")
+                # else:
+                #     print("*", end = " ")
             elif (obliczana_wysokosc >= wysokosc - 2):
                 if ( \
                     (szerokosc % 2 == 0 and (obliczana_szerokosc == szerokosc / 2 or obliczana_szerokosc + 1 == szerokosc / 2)) or \
